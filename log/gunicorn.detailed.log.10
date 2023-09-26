@@ -1,0 +1,89 @@
+[2023-09-18 19:35:45,860] INFO _log() L224   * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:1000
+ * Running on http://10.0.0.184:1000 (Press CTRL+C to quit) - call_trace=C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-18 19:35:54,652] INFO _log() L224  127.0.0.1 - - [18/Sep/2023 19:35:54] "GET /estoque HTTP/1.1" 200 - - call_trace=C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-18 19:35:54,667] INFO _log() L224  127.0.0.1 - - [18/Sep/2023 19:35:54] "GET /estoque HTTP/1.1" 200 - - call_trace=C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-18 19:36:12,774] INFO _log() L224  127.0.0.1 - - [18/Sep/2023 19:36:12] "OPTIONS /produto HTTP/1.1" 200 - - call_trace=C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-18 19:36:12,802] ERROR log_exception() L1449 Exception on /produto [POST] - call_trace=C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\flask_openapi3\scaffold.py", line 191, in wrapper
+    resp = _do_wrapper(
+           ^^^^^^^^^^^^
+  File "C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\flask_openapi3\do_wrapper.py", line 135, in _do_wrapper
+    response = func(**request_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mateu\Desktop\mvp3_B\app.py", line 89, in add_produto
+    modelo = form.modelo,
+             ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'modelo'
+[2023-09-18 19:36:12,905] INFO _log() L224  127.0.0.1 - - [18/Sep/2023 19:36:12] "[35m[1mPOST /produto HTTP/1.1[0m" 500 - - call_trace=C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-18 19:39:00,330] INFO _log() L224   * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:1000
+ * Running on http://10.0.0.184:1000 (Press CTRL+C to quit) - call_trace=C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-18 19:39:21,350] INFO _log() L224  127.0.0.1 - - [18/Sep/2023 19:39:21] "OPTIONS /produto HTTP/1.1" 200 - - call_trace=C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-18 19:39:21,371] ERROR log_exception() L1449 Exception on /produto [POST] - call_trace=C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\flask_openapi3\scaffold.py", line 191, in wrapper
+    resp = _do_wrapper(
+           ^^^^^^^^^^^^
+  File "C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\flask_openapi3\do_wrapper.py", line 135, in _do_wrapper
+    response = func(**request_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mateu\Desktop\mvp3_B\app.py", line 99, in add_produto
+    cep = form['cep'],
+          ~~~~^^^^^^^
+KeyError: 'cep'
+[2023-09-18 19:39:21,386] INFO _log() L224  127.0.0.1 - - [18/Sep/2023 19:39:21] "[35m[1mPOST /produto HTTP/1.1[0m" 500 - - call_trace=C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-18 19:41:01,004] INFO _log() L224  127.0.0.1 - - [18/Sep/2023 19:41:01] "OPTIONS /produto HTTP/1.1" 200 - - call_trace=C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-18 19:41:01,139] INFO _log() L224  127.0.0.1 - - [18/Sep/2023 19:41:01] "POST /produto HTTP/1.1" 200 - - call_trace=C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-18 19:41:11,305] INFO _log() L224  127.0.0.1 - - [18/Sep/2023 19:41:11] "GET /estoque HTTP/1.1" 200 - - call_trace=C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-18 19:41:11,344] INFO _log() L224  127.0.0.1 - - [18/Sep/2023 19:41:11] "GET /estoque HTTP/1.1" 200 - - call_trace=C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-18 19:42:15,166] INFO _log() L224  127.0.0.1 - - [18/Sep/2023 19:42:15] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-18 19:42:15,524] INFO _log() L224  127.0.0.1 - - [18/Sep/2023 19:42:15] "[36mGET /openapi/static/css/swagger-ui.css HTTP/1.1[0m" 304 - - call_trace=C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-18 19:42:15,559] INFO _log() L224  127.0.0.1 - - [18/Sep/2023 19:42:15] "[36mGET /openapi/static/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-18 19:42:15,624] INFO _log() L224  127.0.0.1 - - [18/Sep/2023 19:42:15] "[36mGET /openapi/static/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-18 19:42:16,058] INFO _log() L224  127.0.0.1 - - [18/Sep/2023 19:42:16] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-18 19:42:16,182] INFO _log() L224  127.0.0.1 - - [18/Sep/2023 19:42:16] "[36mGET /openapi/static/images/swagger.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-18 19:42:28,200] INFO _log() L224  127.0.0.1 - - [18/Sep/2023 19:42:28] "[31m[1mPOST /produto HTTP/1.1[0m" 400 - - call_trace=C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-18 19:42:30,823] INFO _log() L224  127.0.0.1 - - [18/Sep/2023 19:42:30] "[31m[1mPOST /produto HTTP/1.1[0m" 400 - - call_trace=C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-18 19:45:36,605] INFO _log() L224   * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:1000
+ * Running on http://10.0.0.184:1000 (Press CTRL+C to quit) - call_trace=C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-18 19:45:37,940] INFO _log() L224  127.0.0.1 - - [18/Sep/2023 19:45:37] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-18 19:45:38,339] INFO _log() L224  127.0.0.1 - - [18/Sep/2023 19:45:38] "[36mGET /openapi/static/css/swagger-ui.css HTTP/1.1[0m" 304 - - call_trace=C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-18 19:45:38,415] INFO _log() L224  127.0.0.1 - - [18/Sep/2023 19:45:38] "[36mGET /openapi/static/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-18 19:45:38,458] INFO _log() L224  127.0.0.1 - - [18/Sep/2023 19:45:38] "[36mGET /openapi/static/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-18 19:45:39,013] INFO _log() L224  127.0.0.1 - - [18/Sep/2023 19:45:39] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\mateu\Desktop\mvp3_B\myenv\Lib\site-packages\werkzeug\_internal.py L224 
